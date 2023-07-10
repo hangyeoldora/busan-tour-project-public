@@ -1,0 +1,31 @@
+{
+  "name": "busan-tour-project",
+  "version": "1.0.0",
+  "description": "busan tour project",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test",
+    "devStart": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hangyeoldora/busan-tour-project-public.git"
+  },
+  "keywords": [
+    "busan"
+  ],
+  "author": "Hangyeol Lee",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hangyeoldora/busan-tour-project-public/issues"
+  },
+  "homepage": "https://github.com/hangyeoldora/busan-tour-project-public#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "nodemon": "^3.0.1",
+    "sequelize": "^6.32.1",
+    "sequelize-cli": "^6.6.1"
+  }
+}
