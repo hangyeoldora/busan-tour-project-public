@@ -1,9 +1,14 @@
 const express = require("express");
 const app = express();
+app.use(express.json());
 const cors = require("cors");
-app.use(cors);
+app.use(cors());
+app.use(express.static("public"));
 require("dotenv").config();
 
-app.listen('3001', () => {
+const mainRouter = require("./routes/main");
+app.use("/", mainRouter);
+
+app.listen('3002', () => {
     console.log('running');
 })
