@@ -7,7 +7,7 @@ app.use(express.static("public"));
 require("dotenv").config();
 
 const mainRouter = require("./routes/main");
-app.use("/", mainRouter);
+app.use("/api", mainRouter);
 
 app.listen('3002', () => {
     console.log('running');
